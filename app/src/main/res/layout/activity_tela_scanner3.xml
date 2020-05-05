@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fillViewport="true"
+    tools:context=".tela_scanner3">
+
+    <me.dm7.barcodescanner.zxing.ZXingScannerView
+        android:id="@+id/zxscan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/layout_result"
+        ></me.dm7.barcodescanner.zxing.ZXingScannerView>
+
+       <LinearLayout
+        android:id="@+id/layout_result"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:padding="50dp"
+        android:background="@color/colorPrimaryDark"
+        >
+
+           <TextView
+               android:id="@+id/txt_result"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="6dp"
+               android:gravity="center"
+               android:text="..."
+               android:textColor="@android:color/white"
+               android:textSize="45dp"></TextView>
+       </LinearLayout>
+
+
+</RelativeLayout>

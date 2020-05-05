@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="428dp"
+        android:layout_height="77dp"
+        android:background="#FF0000"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-9dp"
+        tools:layout_editor_absoluteY="-1dp" />
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="47dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="12dp"
+        android:background="#00FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toStartOf="@+id/imageView8"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.714"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="396dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="112dp"
+        android:contentDescription="TODO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton4"
+        app:srcCompat="@drawable/img_1"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="395dp"
+        android:layout_height="269dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/img_2" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="162dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/searchView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageButton3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_3"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="76dp"
+        android:layout_height="68dp"
+        android:background="#00FFFFFF"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/img_4"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="4dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="102dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="#00FFFFFF"
+        android:scaleType="centerInside"
+        android:tint="#00FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:srcCompat="@drawable/img_6"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="113dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="272dp"
+        android:background="#00FFFFFF"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton4"
+        app:layout_constraintVertical_bias="0.173"
+        app:srcCompat="@drawable/img_7"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="52dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.545"
+        app:srcCompat="@drawable/img_8"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="109dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@+id/imageButton4"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:srcCompat="@drawable/img_17" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="109dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="38dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintStart_toEndOf="@+id/imageButton5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView13"
+        app:srcCompat="@drawable/img_18" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="102dp"
+        android:layout_height="97dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="17dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView13"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:srcCompat="@drawable/img_19" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="114dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView14"
+        app:layout_constraintTop_toBottomOf="@+id/imageView15"
+        app:srcCompat="@drawable/img_20" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
